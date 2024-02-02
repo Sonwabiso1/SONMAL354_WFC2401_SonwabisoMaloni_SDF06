@@ -35,16 +35,18 @@ img {
     padding: 0;
     cursor: pointer;
 }
-
+/* Style for the focus state of a button with class .btn */
 .btn:focus {
     outline: 0.5rem auto #4d90fe;
 }
 
 .visually-hidden {
+    /* Set position to absolute to remove the element from the normal flow */
     position: absolute !important;
     height: 1px;
     width: 1px;
     overflow: hidden;
+     /* Use 'clip' to further hide the element by defining a rectangle (1x1 pixel) */
     clip: rect(1px, 1px, 1px, 1px);
 }
 
@@ -63,9 +65,11 @@ img {
 .profile-image {
     float: left;
     width: calc(33.333% - 1rem);
-    display: flex;
+    /* Use flexbox to center the content horizontally and vertically */
+    display: flex;   
     justify-content: center;
     align-items: center;
+    /* Add right margin to create spacing between elements */
     margin-right: 3rem;
 }
 
@@ -183,7 +187,7 @@ img {
     font-size: 2.5rem;
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
-
+/* Rotate elements along the Y-axis by 180 degrees */
 .fa-clone,
 .fa-comment {
     transform: rotateY(180deg);
